@@ -1,4 +1,4 @@
-# Reference: https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+# Reference: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
 updates:
