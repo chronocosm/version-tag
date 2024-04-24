@@ -1,6 +1,6 @@
 # version-tag
 
-Create a Git tag in the format `vM.m.P` from the
+A GitHub Action to create a Git tag in the format `vM.m.P` from the
 [Semantically Versioned](https://semver.org/)
 GitHub release tag.
 
