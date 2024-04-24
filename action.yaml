@@ -1,0 +1,13 @@
+name: "Create vM.m.P-style tag for a M.m.P tag"
+description: "Create a tag in the form v<Semantic-Version>."
+author: support@chronocosm.com
+
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/action.sh
+      shell: bash
+
+branding:
+  icon: "tag"
+  color: "green"
