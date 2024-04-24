@@ -25,3 +25,4 @@
 
 - References:
   - [actions/checkout](https://github.com/actions/checkout)
+  - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
