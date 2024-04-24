@@ -20,3 +20,8 @@
 
 - References
   - [Configuration options for the dependabot.yml file](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file)
+
+### README.md
+
+- References:
+  - [actions/checkout](https://github.com/actions/checkout)
