@@ -1,6 +1,12 @@
 #!/bin/sh
 set -eu
 
+# Support private repositories.
+
+if [[ ! -z "${GITHUB_AUTHENTICATION_TOKEN}" ]]; then
+    git config --global --add url."https://x-access-token:${GITHUB_AUTHENTICATION_TOKEN}@github.com/".insteadOf "https://github.com/"
+fi
+
 # Apply hotfix for 'fatal: unsafe repository' error.
 
 git config --global --add safe.directory "${GITHUB_WORKSPACE}"
