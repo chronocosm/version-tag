@@ -4,10 +4,6 @@ set -eux
 
 # Support private repositories.
 
-env
-
-echo ${#GITHUB_AUTHENTICATION_TOKEN}
-
 if [[ ! -z "${GITHUB_AUTHENTICATION_TOKEN}" ]]; then
     git config --global --add url."https://x-access-token:${GITHUB_AUTHENTICATION_TOKEN}@github.com/".insteadOf "https://github.com/"
 fi

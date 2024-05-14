@@ -5,8 +5,15 @@ author: support@chronocosm.com
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/action.sh
+    - name: config
+      run: |
+        git config --global --add url."https://x-access-token:${GITHUB_AUTHENTICATION_TOKEN}@github.com/".insteadOf "https://github.com/"
+        ${{ github.action_path }}/action.sh
       shell: bash
+
+    # - name: Run Action
+    #   run: ${{ github.action_path }}/action.sh
+    #   shell: bash
 
 branding:
   icon: "tag"
