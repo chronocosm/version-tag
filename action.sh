@@ -5,6 +5,7 @@ set -eu
 # Support private repositories.
 
 if [[ ! -z "${GITHUB_AUTHENTICATION_TOKEN}" ]]; then
+    echo ">>>>>>> MJD HERE"
     git config --global --add url."https://x-access-token:${GITHUB_AUTHENTICATION_TOKEN}@github.com/".insteadOf "https://github.com/"
 fi
 
