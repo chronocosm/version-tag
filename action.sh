@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-set -eu
+set -eux
 
 # Support private repositories.
 
 if [[ ! -z "${GITHUB_AUTHENTICATION_TOKEN}" ]]; then
-    echo ">>>>>>> MJD HERE"
+    echo ">>>>>>> 1 "
     git config --global --add url."https://x-access-token:${GITHUB_AUTHENTICATION_TOKEN}@github.com/".insteadOf "https://github.com/"
+    echo ">>>>>>> 1 "
 fi
 
 # Apply hotfix for 'fatal: unsafe repository' error.
