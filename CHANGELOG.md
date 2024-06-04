@@ -1,8 +1,8 @@
 # CHANGELOG
 
-## [0.1.1] - 2024-06-03
+## [1.0.0] - 2024-06-03
 
-### Added to 0.1.1
+### Added to 1.0.0
 
 - Include GitHub action for mutable tag
 
