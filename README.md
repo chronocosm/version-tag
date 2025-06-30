@@ -1,17 +1,13 @@
 # version-tag
 
 A GitHub Action to create a Git tag in the format `vM.m.P` from the
-[Semantically Versioned](https://semver.org/)
-GitHub release tag.
+[Semantically Versioned] GitHub release tag.
 
 ## Overview
 
-Using the SHA of a GitHub release,
-create another Git tag with "v" prefixed to the
-[Semantic Version](https://semver.org/).
+Using the SHA of a GitHub release, create another Git tag with "v" prefixed to the [Semantic Version].
 
-**Note:**
-[Is “v1.2.3” a semantic version?](https://semver.org/#is-v123-a-semantic-version)
+**Note:** [Is “v1.2.3” a semantic version?]
 
 ## Use
 
@@ -44,4 +40,7 @@ create another Git tag with "v" prefixed to the
     ```
 
 [GitHub Secret]: https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions
+[Is “v1.2.3” a semantic version?]: https://semver.org/#is-v123-a-semantic-version
 [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+[Semantic Version]: https://semver.org/
+[Semantically Versioned]: (https://semver.org/)
